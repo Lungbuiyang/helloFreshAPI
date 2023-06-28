@@ -28,6 +28,14 @@ app.get('/planCategories', async (req, res) => {
 
     res.send(output)
 })
+//how to defined different route 28 june 23
+app.get('/WhyHelloFresh', async (req, res) => {
+    let query = {};
+    let collection = "WhyHelloFresh"
+    let output = await getData(collection, query)
+
+    res.send(output)
+})
 
 //Number Of People
 app.get('/numberOfPeople', async (req, res) => {

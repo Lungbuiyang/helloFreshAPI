@@ -1,74 +1,78 @@
-// page 1  (Select and Customizing Plan wrt Number of People )
+/=======================================/
+WEBSITE NAME - HelloFresh.com 
+////////////////////////////////////////
+HelloFresh is a publicly traded meal kit company based 
+in Berlin, Germany. It is the largest meal-kit provider in the United 
+States, and also has operations in Australia, Canada, New Zealand, 
+Europe (United Kingdom, Germany, Austria, Switzerland, Belgium, 
+Netherlands, Luxembourg, France, Italy and Scandinavia) and Japan.
+////////////////////////////////////////
+
+//////// Page 1  (Select and Customizing Plan wrt Number of People )
 
 Plan Categories - Customer to choose any plan from the available 6 options
-http://localhost:9122/planCategories
-Done
+https://hellofreshapi.onrender.com/planCategories
 
-Number of people
-http://localhost:9122/numberOfPeople
-Done
+Number of people - Customer have to choose the number of people
+https://hellofreshapi.onrender.com/numberOfPeople
 
 Customizing Plan wrt Number Of People
-http://localhost:9122/customizePlan?peoplesId=1
-Done
+https://hellofreshapi.onrender.com/customizePlan?peoplesId=1
 
-//page 2 (Addresses)
+
+//////// Page 2 (Addresses)
 
 Address - Customer have to filled up the form of their address
-http://localhost:9122/enterAddress
-http://localhost:9122/address
-Done
+https://hellofreshapi.onrender.com/enterAddress
+https://hellofreshapi.onrender.com/address
 
 
-
-//Page 3 (CheckOut and Order Summary)
+//////// Page 3 (CheckOut and Order Summary)
 
 Payment option 
-http://localhost:9122/payment
-done
+https://hellofreshapi.onrender.com/payment
 
 
 Order summary - it will show the summary of the customer chosen plan, shipping charge, discount, total price, and delivery details:
-http://localhost:9122/orders
-http://localhost:9122/orderSummary
-Done
+https://hellofreshapi.onrender.com/orders
+https://hellofreshapi.onrender.com/orderSummary
 
 
-////// page 4 (Select Meals base on the Plan Selected)
+//////// Page 4 (Select Meals base on the Plan Selected)
 
 Menu's
-http://localhost:9122/menu
+https://hellofreshapi.onrender.com/menu
 
 menu's wrt to planID
-http://localhost:9122/menu/1
+https://hellofreshapi.onrender.com/menu/1
 
 recipes 
-http://localhost:9122/recipes
+https://hellofreshapi.onrender.com/recipes
+
 
 recipes wrt to the menu
-http://localhost:9122/recipes?mealsId=3
+https://hellofreshapi.onrender.com/recipes?mealsId=3
 
 
-// Page 5 (Update and Delete orders Pages )
-
+//////// Page 5 (Update and Delete orders Pages )
 
 List of all the orders customer selected
-http://localhost:9122/menuDetails
+https://hellofreshapi.onrender.com/menuDetails
 {"id":[1,2,3]}
 
 Update orders details 
-http://localhost:9122/update
+https://hellofreshapi.onrender.com/update
 {
     "_id":"6483990d90b23a0a0b6a503b",
     "status":"out for delivery"
 }
-http://localhost:9122/orderSummary
+https://hellofreshapi.onrender.com/orderSummary
 
 Delete Orders
-http://localhost:9122/deleteOrder
+https://hellofreshapi.onrender.com/deleteOrder
 {"_id":"6483990d90b23a0a0b6a503b"}
 
-http://localhost:9122/orderSummary
+https://hellofreshapi.onrender.com/orderSummary
 
 
 
