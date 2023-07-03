@@ -141,13 +141,13 @@ app.post('/orderSummary', async (req, res) => {
 ///page 4
 
 //getting menu
-app.get('/menu', async (req, res) => {
-    let query = {};
-    let collection = "menu";
-    let output = await getData(collection, query)
+// app.get('/menu', async (req, res) => {
+//     let query = {};
+//     let collection = "menu";
+//     let output = await getData(collection, query)
 
-    res.send(output)
-})
+//     res.send(output)
+// })
 
 //to target a menu with specific plan_id param
 app.get('/menu', async (req, res) => {
