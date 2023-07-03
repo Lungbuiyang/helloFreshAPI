@@ -150,9 +150,17 @@ app.get('/menu', async (req, res) => {
 })
 
 //to target a menu with specific plan_id param
-app.get('/menu/:id', async (req, res) => {
-    let id = Number(req.params.id);
-    let query = { plan_id: id };
+app.get('/menu', async (req, res) => {
+    let query = {}
+    if(req.query.menuId){
+        query = {menu_id: Number(req.query.menuId)}
+    }
+    else if(req.query.mealId){
+        query = {"menuType.plan_id": Number(req.query.mealId)}
+    }
+    else{
+        query = {}
+    }
     let collection = "menu";
     let output = await getData(collection, query);
     res.send(output)
