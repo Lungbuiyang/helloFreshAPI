@@ -166,6 +166,14 @@ app.get('/menu', async (req, res) => {
     res.send(output)
 })
 
+// to target a menu with specific menu_id param
+app.get('/menu/:id', async (req, res) => {
+    let id = Number(req.params.id);
+    let query = { menu_id: id };
+    let collection = "menu";
+    let output = await getData(collection, query);
+    res.send(output)
+})
 
 //recipes wrt to menu
 app.get('/recipes', async (req, res) => {
