@@ -152,8 +152,8 @@ app.post('/orderSummary', async (req, res) => {
 //to target a menu with specific plan_id param
 app.get('/menu', async (req, res) => {
     let query = {}
-    if(req.query.menuId){
-        query = {menu_id: Number(req.query.menuId)}
+    if(req.query.mealId){
+        query = {menu_id: Number(req.query.mealId)}
     }
     else if(req.query.mealId){
         query = {"menuType.plan_id": Number(req.query.mealId)}
